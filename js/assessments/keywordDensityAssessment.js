@@ -16,7 +16,7 @@ var calculateKeywordDensityResult = function( keywordDensity, i18n, keywordCount
 
 	var keywordDensityPercentage = keywordDensity.toFixed( 1 ) + "%";
 
-	if ( keywordDensity > 3.5 ) {
+	if ( keywordDensity > 4 ) {
 		score = -50;
 
 		/* translators: %1$s expands to the keyword density percentage, %2$d expands to the keyword count,
@@ -31,7 +31,7 @@ var calculateKeywordDensityResult = function( keywordDensity, i18n, keywordCount
 		text = i18n.sprintf( text, keywordDensityPercentage, keywordCount, max );
 	}
 
-	if ( inRange( keywordDensity, 2.5, 3.5 ) ) {
+	if ( inRange( keywordDensity, 3, 4 ) ) {
 		score = -10;
 
 		/* translators: %1$s expands to the keyword density percentage, %2$d expands to the keyword count,
@@ -46,7 +46,7 @@ var calculateKeywordDensityResult = function( keywordDensity, i18n, keywordCount
 		text = i18n.sprintf( text, keywordDensityPercentage, keywordCount, max );
 	}
 
-	if ( inRange( keywordDensity, 0.5, 2.5 ) ) {
+	if ( inRange( keywordDensity, 1, 3 ) ) {
 		score = 9;
 
 		/* translators: %1$s expands to the keyword density percentage, %2$d expands to the keyword count. */
@@ -56,7 +56,7 @@ var calculateKeywordDensityResult = function( keywordDensity, i18n, keywordCount
 		text = i18n.sprintf( text, keywordDensityPercentage, keywordCount );
 	}
 
-	if ( inRange( keywordDensity, 0, 0.5 ) ) {
+	if ( inRange( keywordDensity, 0, 1 ) ) {
 		score = 4;
 
 		/* translators: %1$s expands to the keyword density percentage, %2$d expands to the keyword count. */
