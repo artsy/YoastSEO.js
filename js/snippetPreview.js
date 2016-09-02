@@ -25,14 +25,14 @@ var defaults = {
 	},
 	placeholder: {
 		title:    "This is an example title - edit by clicking here",
-		metaDesc: "Modify your meta description by editing it right here",
+		metaDesc: "Modify your sample meta description by editing it here, then finalize it in the Admin tab",
 		urlPath:  "example-post/"
 	},
 	defaultValue: {
 		title: "",
 		metaDesc: ""
 	},
-	baseURL: "http://example.com/",
+	baseURL: "http://www.artsy.net",
 	callbacks: {
 		saveSnippetData: function() {}
 	},
@@ -40,7 +40,7 @@ var defaults = {
 	metaDescriptionDate: ""
 };
 
-var titleMaxLength = 65;
+var titleMaxLength = 60;
 
 var inputPreviewBindings = [
 	{

@@ -18,7 +18,7 @@ var titleHasKeywordAssessment = function( paper, researcher, i18n ) {
 
 	if ( keywordMatches.matches > 0 && keywordMatches.position === 0 ) {
 		score = 9;
-		text = i18n.dgettext( "js-text-analysis", "The page title contains the focus keyword, at the beginning which is considered " +
+		text = i18n.dgettext( "js-text-analysis", "The keyword appears at the beginning of the page title, which is considered" +
 			"to improve rankings." );
 	}
 
