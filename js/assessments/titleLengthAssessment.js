@@ -9,7 +9,7 @@ var inRange = require( "lodash/inRange" );
  */
 var calculatePageTitleLengthResult = function( pageTitleLength, i18n ) {
 	var minLength = 35;
-	var maxLength = 65;
+	var maxLength = 60;
 
 	if ( inRange( pageTitleLength, 1, 35 ) ) {
 		return {
@@ -28,7 +28,7 @@ var calculatePageTitleLengthResult = function( pageTitleLength, i18n ) {
 		};
 	}
 
-	if ( inRange( pageTitleLength, 35, 66 ) ) {
+	if ( inRange( pageTitleLength, 35, 61 ) ) {
 		return {
 			score: 9,
 			text: i18n.sprintf(
