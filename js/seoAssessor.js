@@ -30,21 +30,21 @@ var SEOAssessor = function( i18n ) {
 	this._assessments = {
 		// fleschReadingEase:      fleschReadingEase,
 		introductionKeyword:    introductionKeyword,
-		keyphraseLength:        keyphraseLength,
+		//keyphraseLength:        keyphraseLength,
 		keywordDensity:         keywordDensity,
 		// keywordStopWords:       keywordStopWords,
-		// metaDescriptionKeyword: metaDescriptionKeyword,
+		metaDescriptionKeyword: metaDescriptionKeyword,
 		// metaDescriptionLength:  metaDescriptionLength,
 		// subheadingsKeyword:     subheadingsKeyword,
 		// textCompetingLinks:     textCompetingLinks,
 		// textImages:             textImages,
-		textLength:             textLength,
+		//textLength:             textLength,
 		// textLinks:              textLinks,
 		// textSubheadings:        textSubheadings,
 		titleKeyword:           titleKeyword,
-		titleLength:            titleLength,
-		urlKeyword:             urlKeyword,
-		urlLength:              urlLength,
+		//titleLength:            titleLength,
+		//urlKeyword:             urlKeyword,
+		//urlLength:              urlLength,
 		// urlStopWords:           urlStopWords
 	};
 };
